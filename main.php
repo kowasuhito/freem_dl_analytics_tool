@@ -129,7 +129,7 @@ foreach ($file as $row) {
         $raw_records[] = $row;
     }
 }
-print 'csv せいり読み込み' . PHP_EOL; var_dump($raw_records);
+//print 'csv せいり読み込み' . PHP_EOL; var_dump($raw_records);
 
 $csv_header = null;
 $csv_column_index = array();
@@ -151,7 +151,7 @@ for ($i = 1; $i < count($raw_records); $i++) {
 }
 
 //var_dump($csv_header);
-print 'csv 整理' . PHP_EOL; var_dump($csv_records);
+//print 'csv 整理' . PHP_EOL; var_dump($csv_records);
 
 // スクレイピングしデータもカラムをキーに配列を初期化
 $dl_data_header = $dl_data[0];
@@ -166,7 +166,7 @@ for ($i = 1; $i < count($dl_data); $i++) {
 }
 
 // var_dump($dl_data_header);
-print 'DL データ' . PHP_EOL; var_dump($dl_reordes);
+//print 'DL データ' . PHP_EOL; var_dump($dl_reordes);
 
 $marged_csv = array_merge_recursive($dl_reordes, $csv_records);
 $all_products = array();
@@ -177,7 +177,7 @@ foreach ($marged_csv as $product_dl_vals) {
 }
 
 //var_dump($all_products);
-print 'マージ データ' . PHP_EOL; var_dump($marged_csv);
+//print 'マージ データ' . PHP_EOL; var_dump($marged_csv);
 
 //一時ファイル削除
 $output_records = array();
