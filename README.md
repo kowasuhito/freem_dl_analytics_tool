@@ -13,7 +13,7 @@
 1. ふりーむ！のアカウントID / パスワードを設定する
 https://github.com/kowasuhito/freem_dl_analytics_tool/blob/master/main.php#L13-L14
 1. 実行する  
-e.g. windows の場合  
-> C:\>c:\pleiades\xampp\php\php.exe workspace\freem_dl_analytics_tool\main.php
+  ・ e.g. windows の場合  
+  `C:\>c:\pleiades\xampp\php\php.exe workspace\freem_dl_analytics_tool\main.php`
 1. main.php と同じ場所に csv というディレクトリが作られ、download.csv が生成されています。
 1. 翌日に実行すれば、download.csv に追加された分のダウンロード数が追記されます。　
